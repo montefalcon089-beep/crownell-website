@@ -1,24 +1,27 @@
 "use client";
-
+import Link from "next/link";
 import { useEffect } from "react";
 import { Facebook, Instagram, Phone, Mail } from "lucide-react";
 
 const services = [
   {
-    title: "Glutathione IV Drip",
-    desc: "Premium gluta drip options for a brighter, healthier glow—administered with care in a safe and relaxing setting.",
+    slug: "iv-drip",
+    title: "IV Drip / Glow Treatments",
+    desc: "Signature glow and wellness drips for brighter, healthier-looking skin.",
     image:
       "https://i.pinimg.com/1200x/45/a1/b0/45a1b0bef8932fd77bdb88f90e4b4e5d.jpg",
   },
   {
-    title: "Nail Care Services",
-    desc: "Gel polish manicure and pedicure with a clean, polished finish—perfect for everyday elegance.",
+    slug: "whitening",
+    title: "Whitening Treatments",
+    desc: "Targeted whitening services including underarm care and skin reset options.",
     image:
-      "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=80",
+      "https://i.pinimg.com/1200x/c4/be/8f/c4be8f58ef7464d8fa089d34a3309a2a.jpg",
   },
   {
+    slug: "facial",
     title: "Facial Treatments",
-    desc: "Gentle, skin-loving facial care customized to your needs—designed to refresh and restore your glow.",
+    desc: "Facial care and advanced resurfacing options designed to refresh and restore your glow",
     image:
       "https://i.pinimg.com/736x/d0/c0/69/d0c0693262fe3341077ee015e0a24e10.jpg",
   },
@@ -38,8 +41,6 @@ const fullServiceList = [
   "Lips Tattoo",
   "Lashes",
   "Nails (Gel Polish Manicure/Pedicure)",
-  "Salon Spa",
-  "Haircut Services",
 ];
 
 export default function Home() {
@@ -211,12 +212,12 @@ export default function Home() {
                 <div className="p-6">
                   <h4 className="font-serif text-2xl mb-2">{s.title}</h4>
                   <p className="text-gray-600 mb-5">{s.desc}</p>
-                  <a
-                    href="#booking"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-[#2C2C2C] hover:text-[#BFA089] transition"
+                  <Link
+                    href={`/services/${s.slug}`}
+                    className="inline-flex items-center gap-2 text-sm font-medium text-[#2C22C2] hover:text-[#BFA089] transition"
                   >
-                    Book now <span aria-hidden>→</span>
-                  </a>
+                     View services <span aria-hidden>→</span>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -317,7 +318,7 @@ export default function Home() {
 
               <p className="text-gray-300 mt-5 max-w-md">
                 Premium Gluta Drip Services, Eyebrow Tattoo, Lashes, Nails, Laser Hair Removal,
-                Facial Treatments, Face & Body Slimming, Laser Whitening, Salon Spa, Haircut Services & more.
+                Facial Treatments, Face & Body Slimming, Laser Whitening, & more.
               </p>
 
               <div className="mt-6 flex gap-4">
@@ -364,7 +365,7 @@ export default function Home() {
               <div className="font-serif text-xl mb-3">Operating Hours</div>
               <div className="text-gray-400 space-y-1">
                 <p>Tuesday – Sunday: 9:00 AM – 6:00 PM</p>
-                <p>Sunday: Closed</p>
+                <p>Monday: Closed</p>
               </div>
             </div>
           </div>
