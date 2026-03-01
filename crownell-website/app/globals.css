@@ -44,6 +44,26 @@ body {
   transform: translateX(0);
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: all 700ms ease;
+  will-change: transform, opacity;
+}
+
+.reveal-left {
+  transform: translateX(-24px);
+}
+
+.reveal-right {
+  transform: translateX(24px);
+}
+
+.reveal-show {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
 html {
   scroll-behavior: smooth;
 }

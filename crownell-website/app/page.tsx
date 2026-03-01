@@ -196,7 +196,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl reveal reveal-left" data-reveal>
           <div className="text-center mb-12">
             <div className="uppercase tracking-[0.25em] text-xs text-gray-600 mb-3">
-              Our Popular Services
+              List of Services
             </div>
             <h3 className="font-serif text-4xl md:text-5xl">Our Popular Services</h3>
           </div>
@@ -266,7 +266,7 @@ export default function Home() {
                   Book Appointment
                 </a>
                 <a
-                  href="https://calendar.app.google/B3n3E5r8NkuJ8HLe9"
+                  href="#services"
                   className="border border-[#2C2C2C] px-6 py-3 rounded-full hover:bg-[#2C2C2C] hover:text-white transition"
                 >
                   View Services →
