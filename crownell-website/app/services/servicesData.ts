@@ -24,7 +24,7 @@ export const serviceCategories = [
         description: "Advanced metabolic-support IV therapy formulated to aid energy levels and body contouring goals. Helps support fat metabolism while maintaining overall wellness.",
         sessions: 1,
         tags: [],
-        image: "/services/iv-drip/platinum-burn1.jpg",
+        image: "/services/iv-drip/platinum-burn.jpg",
       },
     ],
   },
@@ -39,7 +39,7 @@ export const serviceCategories = [
         description: "Targeted treatment designed to reduce pigmentation and brighten dark underarms. Helps restore smoother, more even-toned skin safely and effectively.",
         sessions: 1,
         tags: [],
-        image: "/services/whitening/underarm-whitening.jpg",
+        image: "/services/whitening/underarm-whitening1.jpg",
       },
       {
         name: "Carbon Underarm Whitening",
