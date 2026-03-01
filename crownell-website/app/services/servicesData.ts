@@ -68,7 +68,7 @@ export const serviceCategories = [
         description: "A deep-cleansing laser facial that removes impurities, minimizes pores, and improves overall skin tone. Ideal for oily, acne-prone, and dull skin.",
         sessions: 1,
         tags: [],
-        image: "/services/facial/carbon-facial.jpg",
+        image: "/services/facial/carbon-facial1.jpg",
       },
       {
         name: "CO2 Laser (Per Package / Per Session)",
