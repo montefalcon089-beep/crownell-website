@@ -24,7 +24,7 @@ export const serviceCategories = [
         description: "Advanced metabolic-support IV therapy formulated to aid energy levels and body contouring goals. Helps support fat metabolism while maintaining overall wellness.",
         sessions: 1,
         tags: [],
-        image: "/services/iv-drip/platinum-burn.jpg",
+        image: "/services/iv-drip/platinum-burn1.jpg",
       },
     ],
   },
