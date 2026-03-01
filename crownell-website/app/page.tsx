@@ -97,7 +97,7 @@ export default function Home() {
 
           {/* CTA */}
           <a
-            href="https://calendar.app.google/t49qqkD8sNtap53V6"
+            href="https://calendar.app.google/B3n3E5r8NkuJ8HLe9"
             target="_blank"
             className="inline-flex items-center justify-center rounded-full bg-[#2C2C2C] text-white px-5 py-2.5 text-sm hover:bg-[#BFA089] transition"
           >
@@ -257,7 +257,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                {/* Replace # with your booking link or Messenger link later */}
+                {"https://calendar.app.google/B3n3E5r8NkuJ8HLe9"}
                 <a
                   href="#contact"
                   className="bg-[#2C2C2C] text-white px-6 py-3 rounded-full hover:bg-[#BFA089] transition"
@@ -348,13 +348,13 @@ export default function Home() {
               <div className="font-serif text-xl mb-3">Contact</div>
               <div className="text-gray-400 space-y-2">
                 <p>
-                  <span className="font-medium">Address:</span> House no., Barangay, City
+                  <span className="font-medium">Address:</span> Mangga 1 Matatalaib Tarlac City, across Our Lady of Ransom School
                 </p>
                 <p>
                   <span className="font-medium">Phone:</span> 0932 941 7929
                 </p>
                 <p>
-                  <span className="font-medium">Email:</span> crownell@email.com
+                  <span className="font-medium">Email:</span> crownelleaesthetic@gmail.com
                 </p>
               </div>
             </div>
@@ -363,9 +363,8 @@ export default function Home() {
             <div className="reveal reveal-right" data-reveal>
               <div className="font-serif text-xl mb-3">Operating Hours</div>
               <div className="text-gray-400 space-y-1">
-                <p>Monday – Friday: 10:00 AM – 7:00 PM</p>
-                <p>Saturday: 10:00 AM – 4:00 PM</p>
-                <p>Sunday: By appointment</p>
+                <p>Tuesday – Sunday: 9:00 AM – 6:00 PM</p>
+                <p>Sunday: Closed</p>
               </div>
             </div>
           </div>
