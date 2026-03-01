@@ -257,15 +257,15 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                {"https://calendar.app.google/B3n3E5r8NkuJ8HLe9"}
+                {}
                 <a
-                  href="#contact"
+                  href="https://calendar.app.google/B3n3E5r8NkuJ8HLe9"
                   className="bg-[#2C2C2C] text-white px-6 py-3 rounded-full hover:bg-[#BFA089] transition"
                 >
                   Book Appointment
                 </a>
                 <a
-                  href="#services"
+                  href="https://calendar.app.google/B3n3E5r8NkuJ8HLe9"
                   className="border border-[#2C2C2C] px-6 py-3 rounded-full hover:bg-[#2C2C2C] hover:text-white transition"
                 >
                   View Services →
