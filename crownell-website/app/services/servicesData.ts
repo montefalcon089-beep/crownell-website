@@ -24,7 +24,7 @@ export const serviceCategories = [
         description: "Advanced metabolic-support IV therapy formulated to aid energy levels and body contouring goals. Helps support fat metabolism while maintaining overall wellness.",
         sessions: 1,
         tags: [],
-        image: "/services/iv-drip/platinum-burn.jpg",
+        image: "/services/iv-drip/platinum-burn2.jpg",
       },
     ],
   },
@@ -32,7 +32,7 @@ export const serviceCategories = [
     slug: "whitening",
     title: "Whitening Treatments",
     subtitle: "Targeted whitening care for brighter skin.",
-    heroImage: "/services/whitening/hero2.jpg",
+    heroImage: "/services/whitening/hero4.jpg",
     items: [
       {
         name: "Underarm Whitening",
@@ -53,7 +53,7 @@ export const serviceCategories = [
         description: "A restorative treatment that combines exfoliation and nourishing care to improve skin tone and texture. Helps achieve clearer, softer, and more radiant underarms.",
         sessions: 1,
         tags: [],
-        image: "/services/whitening/skin-reset.jpg",
+        image: "/services/whitening/skin-reset1.jpg",
       },
     ],
   },
@@ -68,7 +68,7 @@ export const serviceCategories = [
         description: "A deep-cleansing laser facial that removes impurities, minimizes pores, and improves overall skin tone. Ideal for oily, acne-prone, and dull skin.",
         sessions: 1,
         tags: [],
-        image: "/services/facial/carbon-facial.jpg",
+        image: "/services/facial/carbon-facial1.jpg",
       },
       {
         name: "CO2 Laser (Per Package / Per Session)",
