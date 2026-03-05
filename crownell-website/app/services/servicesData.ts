@@ -26,6 +26,13 @@ export const serviceCategories = [
         tags: [],
         image: "/services/iv-drip/platinum-burn2.jpg",
       },
+      {
+        name: "Etherium Glow Therapy",
+        description: "An advanced skin rejuvenation treatment designed to support hydration, brighten complexion, and promote youthful radiance. This premium therapy helps enhance skin vitality while supporting overall wellness.",
+        sessions: 1,
+        tags: [],
+        image: "/services/iv-drip/namiko1.jpg",
+      },
     ],
   },
   {
@@ -84,6 +91,7 @@ export const serviceCategories = [
         tags: [],
         image: "/services/facial/glow.jpg",
       },
+      
     ],
   },
 ];

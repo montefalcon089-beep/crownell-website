@@ -78,8 +78,13 @@ export default async function CategoryPage({ params }: Props) {
                 boxShadow: "0 6px 18px rgba(0,0,0,0.06)",
               }}
             >
-              <div style={{ position: "relative", width: "100%", height: 180 }}>
-                <Image src={item.image} alt={item.name} fill style={{ objectFit: "cover" }} />
+              <div style={{ position: "relative", width: "100%", height: 180, background: "#f6f6f6" }}>
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                   fill
+                 style={{ objectFit: "contain", padding: 12 }}
+                />
               </div>
 
               <div style={{ padding: 16 }}>

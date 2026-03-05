@@ -48,9 +48,7 @@ export default function Home() {
   
   // ✅ Scroll reveal (left/right movement)
   const slimPhotos = [
-  "/slim/namiko1.png",
-  "/slim/namiko2.png",
-  "/slim/namiko.png",
+  
   "/slim/mounjaro-1.png",
   "/slim/mounjaro-2.png",
   "/slim/mounjaro-3.png",
