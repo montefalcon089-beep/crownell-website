@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useEffect } from "react";
+import Image from "next/image";
+import { useEffect, useMemo, useState } from "react";
 import { Facebook, Instagram, Phone, Mail } from "lucide-react";
 
 const services = [
@@ -44,7 +45,25 @@ const fullServiceList = [
 ];
 
 export default function Home() {
+  
   // ✅ Scroll reveal (left/right movement)
+  const slimPhotos = [
+  "/slim/namiko1.png",
+  "/slim/namiko2.png",
+  "/slim/namiko.png",
+  "/slim/mounjaro-1.png",
+  "/slim/mounjaro-2.png",
+  "/slim/mounjaro-3.png",
+  "/slim/mounjaro-4.png"
+];
+
+  const [slimIndex, setSlimIndex] = useState(0);
+
+  const slimPrev = () =>
+    setSlimIndex((i) => (i - 1 + slimPhotos.length) % slimPhotos.length);
+
+  const slimNext = () =>
+    setSlimIndex((i) => (i + 1) % slimPhotos.length);
   useEffect(() => {
     const els = document.querySelectorAll<HTMLElement>("[data-reveal]");
 
@@ -64,7 +83,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#FDFBF7] text-[#2C2C2C]">
+    <main className="min-h-screen bg-[#f3efe7] text-[#2C2C2C]">
       {/* HEADER */}
       <header className="sticky top-0 z-50 bg-[#FDFBF7]/90 backdrop-blur border-b border-black/5">
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
@@ -91,9 +110,12 @@ export default function Home() {
             <a className="hover:text-black text-gray-600 transition" href="#services">
               Services
             </a>
-            <a className="hover:text-black text-gray-600 transition" href="#contact">
+            <a className="hover:text-black text-gray-600 transition" href="#contacts">
               Contact
             </a>
+            <a className="hover:text-black text-gray-600 transition" href="#slim-product">
+              Slim-Product
+             </a> 
           </nav>
 
           {/* CTA */}
@@ -190,7 +212,106 @@ export default function Home() {
           </div>
         </div>
       </section>
+            {/* SLIMMING PRODUCT (Placed under About Us) */}
+      <section id="slim-product" className="px-6 md:px-10 py-20 bg-[#FDFBF7]">
+        <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-14 items-center">
+          {/* Left: Text */}
+          <div className="reveal reveal-left" data-reveal>
+            <div className="uppercase tracking-[0.25em] text-xs text-gray-500 mb-3">
+              Slim Product
+            </div>
 
+            <h2 className="font-serif text-4xl md:text-5xl mb-6">
+              Advanced Slimming & Metabolic Support Program
+            </h2>
+
+            <p className="text-gray-600 text-lg mb-5">
+              Crownell offers medically guided weight management options designed to support
+              safe, gradual, and sustainable body transformation. Our program focuses on
+              appetite control, metabolic support, and lifestyle guidance under professional supervision.
+            </p>
+
+            <div className="flex gap-4 flex-wrap">
+              <a
+                href="https://calendar.app.google/B3n3E5r8NkuJ8HLe9"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-[#2C2C2C] text-white px-6 py-3 rounded-full hover:bg-[#BFA089] transition"
+              >
+                Book / Inquire
+              </a>
+
+              <a
+                href="#contact"
+                className="border border-[#2C2C2C] px-6 py-3 rounded-full hover:bg-[#2C2C2C] hover:text-white transition"
+              >
+                Contact us →
+              </a>
+            </div>
+
+            <p className="text-gray-500 text-sm mt-6">
+              *Availability and recommendations depend on assessment/consultation.
+            </p>
+          </div>
+
+          {/* Right: Carousel */}
+          <div className="bg-white rounded-2xl shadow-lg border border-black/5 p-4 reveal reveal-right" data-reveal>
+            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+              <Image
+                src={slimPhotos[slimIndex]}
+                alt={`Slim product photo ${slimIndex + 1}`}
+                fill
+                className="object-cover"
+                priority
+              />
+
+              {/* Prev */}
+              <button
+                type="button"
+                onClick={slimPrev}
+                aria-label="Previous photo"
+                className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow"
+              >
+                ‹
+              </button>
+
+              {/* Next */}
+              <button
+                type="button"
+                onClick={slimNext}
+                aria-label="Next photo"
+                className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow"
+              >
+                ›
+              </button>
+
+              {/* Dots */}
+              <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-2">
+                {slimPhotos.map((_, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => setSlimIndex(i)}
+                    aria-label={`Go to photo ${i + 1}`}
+                    className={`h-2.5 w-2.5 rounded-full transition ${
+                      i === slimIndex ? "bg-[#2C2C2C]" : "bg-white/70"
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-4 text-sm text-gray-600 flex items-center justify-between">
+              <span>
+                Photo {slimIndex + 1} of {slimPhotos.length}
+              </span>
+              <a href="#booking" className="underline hover:text-[#BFA089] transition">
+                Book this →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* SERVICES */}
       <section id="services" className="px-6 md:px-10 py-20 bg-[#F8E1E7]">
         <div className="mx-auto max-w-6xl reveal reveal-left" data-reveal>
