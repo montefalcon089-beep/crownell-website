@@ -179,8 +179,6 @@ export default function Home() {
             <img
               src="/images/about-crownell1.jpg"
               alt="About Crownell"
-              width={800}
-              height={420}
               className="h-[320px] md:h-[420px] w-full object-cover"
             />
           </div>
