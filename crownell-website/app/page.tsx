@@ -108,7 +108,7 @@ export default function Home() {
             <a className="hover:text-black text-gray-600 transition" href="#services">
               Services
             </a>
-            <a className="hover:text-black text-gray-600 transition" href="#contacts">
+            <a className="hover:text-black text-gray-600 transition" href="#contact">
               Contact
             </a>
             <a className="hover:text-black text-gray-600 transition" href="#slim-product">
@@ -177,8 +177,10 @@ export default function Home() {
         <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-14 items-center">
           <div className="rounded-2xl overflow-hidden shadow-xl reveal reveal-left" data-reveal>
             <img
-              src="https://scontent.fmnl31-1.fna.fbcdn.net/v/t39.30808-6/568541539_24950093911284868_6617725037957052788_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeGf0Ihv6sSM4FiyBuTd4eebsM7mg0dFlmywzuaDR0WWbMP4s_L6oNXpezRYT8Xxt0S68w_PdgIOGWPhsiLJ3y1s&_nc_ohc=kTHcSmBowNYQ7kNvwFT-p4y&_nc_oc=AdkMbKsVIhiocWTLbeZ7nqrCoyIjVTcMU0sV9g8ZcB8AzbJQI3tV_l_J859Hcn_0Yr2rj7dpL0_wSfL-3IVaShKv&_nc_zt=23&_nc_ht=scontent.fmnl31-1.fna&_nc_gid=bDHeIQLvpm-V6R8tTfd6Mw&oh=00_AfsEfetsT4Lkcoo2Jf5OLy6MLfi3Uxho08vcRmiD-nTmmg&oe=69A5E70D"
+              src="/image/about-crownell.jpg"
               alt="About Crownell"
+              width={800}
+              height={420}
               className="h-[320px] md:h-[420px] w-full object-cover"
             />
           </div>
