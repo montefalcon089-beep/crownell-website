@@ -177,7 +177,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-14 items-center">
           <div className="rounded-2xl overflow-hidden shadow-xl reveal reveal-left" data-reveal>
             <img
-              src="https://img.sanishtech.com/u/12c4880c24471d87ec66b6eda6820cfa.png"
+              src="https://image2url.com/r2/default/images/1773259700966-1f1adb7f-469d-488e-9426-6af8d3ce8587.jpg"
               alt="About Crownell"
               className="h-[320px] md:h-[420px] w-full object-cover"
             />
